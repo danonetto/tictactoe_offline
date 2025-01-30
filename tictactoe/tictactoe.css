@@ -1,0 +1,97 @@
+#main{
+    display: grid;
+    grid-template-areas: "boxtl boxtm boxtr"
+    "boxml boxm boxmr"
+    "boxbl boxbm boxbr";
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    background-color: aquamarine;
+    width: 50rem;
+    height: 50rem;
+}
+#boxtl {
+    border: 2px solid black;
+    border-top: 0px;
+    grid-area: boxtl;
+    border-left: 0px;
+}
+
+#boxtm {
+    border: 2px solid black;
+    grid-area: boxtm;
+    border-top: 0px;
+}
+
+#boxtr {
+    border: 2px solid black;
+    grid-area: boxtr;
+    border-top: 0px;
+    border-right: 0px;
+}
+
+#boxml {
+    border: 2px solid black;
+    grid-area: boxml;
+    border-left: 0px;
+}
+
+#boxm {
+    border: 2px solid black;
+    grid-area: boxm;
+}
+
+#boxmr {
+    border: 2px solid black;
+    grid-area: boxmr;
+    border-right: 0px;
+}
+
+#boxbl {
+    border: 2px solid black;
+    grid-area: boxbl;
+    border-left: 0px;
+    border-bottom: 0px;
+}
+
+#boxbm {
+    border: 2px solid black;
+    grid-area: boxbm;
+    border-bottom: 0px;
+}
+
+#boxbr {
+    border: 2px solid black;
+    grid-area: boxbr;
+    border-bottom: 0px;
+    border-right: 0px;
+}
+nav{
+    background-color: black;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    height: 50px;
+}
+button{
+    color: white;
+    font-size: larger;
+    background-color: grey;
+   
+}
+#popup{
+    
+    position: fixed;
+    top: 50%;
+    left: 17%;
+    translate: -50% -50%;
+    background-color: grey;
+    width: 420px;
+    height: 120px;
+    display: none;
+    color: white;
+    font-size: 40px;
+    align-items: center;
+}
